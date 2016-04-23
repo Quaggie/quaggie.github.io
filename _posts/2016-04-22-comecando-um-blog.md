@@ -1,78 +1,82 @@
 ---
 layout: post
-title: Novo caminho de aprendizado
-excerpt: "Aqueles que sabem, fazem. Aqueles que entendem, ensinam."
-categories: Vida
+title: Verificação de tipos em Javascript
+excerpt: "O mundo === null"
+categories: [javascript, desenvolvimento]
 comments: true
 ---
 
-# h1
+# Primeiro post (:
 
-## h2 e tipo hr
+Fala pessoal! Aqui segue o primeiro post do meu blog, onde será uma fonte de informações sobre desenvolvimento e também uma local onde eu consiga
+recolher e transmitir qualquer tipo de conhecimento, seja ele profissional ou não.
 
-### h3
+Começaremos hoje com um assunto atípico e, na minha opinião, pouco explorado.
 
-#### h4
+## Tipos de dados em Javascript
 
-**bold**
+### Boolean
 
-`Código`
+`Boolean` é um tipo primitivo, assim como o `null`, `undefined`, `Number`, `String` e o novo `Symbol`, introduzido no *ECMAScript 6*.
+O tipo Boolean pode ser `true` ou `false`, portanto é o dado mais simples de entender em qualquer linguagem de programação.
 
-[Link](bla.com)
-
-Alt-H1
-======
-
-Alt-H2
-------
-
-* test 1
-
-~~scratch~~
-
-_underscores_
-
-Testando markdown Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### Sempre use `git status`
-
-[Link Aqui](www.google.com)
-
-``` javascript
-  function () {
-    return try {
-
-    } catch (er) {
-      console.log(er);
-    }
+{% highlight javascript %}
+  const truthy = true;
+  if (truthy) {
+    // Esta chamada será executada
   }
-```
+  if (!truthy) {
+    // Não será executado
+  }
+{% endhighlight %}
+Acima, vimos um simples exemplo de um `if statement` onde o bloco interno só será chamado caso o `boolean` for `true`.
+Por enquanto, vamos manter isto no famoso _KISS_ (Keep It Simple Stupid).
+
+### Number
+
+`Number` no Javascript é genérico. Não existe certamente um tipo `float`, `double` e `integer` como em linguagens como o **Java**, **C#**, **Objective-C** e afins.
+
+{% highlight javascript %}
+  console.log(typeof 1 === typeof 2.0); // true
+{% endhighlight %}
+
+Certamente fica muito confuso trabalhar e mexer com dados deste tipo, mas claro, sempre há uma saída com o JS.
+
+{% highlight javascript %}
+  const one = 1;
+  const two = 2.0;
+
+  console.log(parseInt(two)); // 2
+  console.log(parseFloat(one)); // 1
+  console.log(typeof parseFloat(one).toFixed(2)); // "string"
+  console.log(Number(parseFloat(one).toFixed(2))); // 1
+{% endhighlight %}
+
+É, não necessariamente. O `toFixed(2)` apenas diz que o número deve ter 2 casas decimais, porém o transforma em tipo `string`..
+Teóricamente o `parseFloat` e o `parseInt` deveriam transformar os números em `Floats` e `Integers`, e na maioria das vezes isto acontece
+normalmente, mas há de se tomar um cuidado muito grande ao mexer com os mesmos.
+Novamente, Há bibliotecas e frameworks para ajudar com isto, mas é importante realmente conhecer os efeitos colaterais da linguagem
+e saber como melhorar estes acontecimentos inesperados.
+
+### Null
+
+Parece tão simples. **`Null`**. Tão indefeso e com tanto efeito colateral. Vamos ao que importa.
+
+{% highlight javascript %}
+  console.log(null); // "object"
+{% endhighlight %}
+
+Neste ponto, você deve estar pensando que esta linguagem é quebrada, e de certa forma eu concordo.
+
+> Porque diabos programar em Javascript?
+
+blblal
 
 #### E também pode ser chamado assim
 ------
-``` java
-  public static void main (String [] args) {
-    String a = new String();
-  }
-```
-
 Podemos ver que o objective-c lbpblbalablballba
 {% highlight objc %}
 - (void)returnNothing {
   UIView *view = [[UIView alloc] init];
 }
-{% endhighlight %}
-
-{% highlight swift %}
-func getName () -> String{
-  return "String"
-}
-{% endhighlight %}
-
-{% highlight javascript %}
-  def print_hi(name)
-    puts "Hi, #{name}"
-  end
 {% endhighlight %}
