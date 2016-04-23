@@ -5,7 +5,13 @@
 #
 title:       "Jonathan Bijos"
 description: "Curiosidades e experiências de programação"
-url:         #"quaggie.github.io"
+url:         "https://quaggie.github.io"
+
+# CONSTANTS
+img_path: "img"
+posts_tab: "posts"
+categories_tab: "caegorias"
+tabs_tab: "tabs"
 
 #
 ###################################
