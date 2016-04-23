@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Verificação de tipos em Javascript
-excerpt: "O mundo === null"
+excerpt: "O mundo ainda não é undefined"
 categories: [desenvolvimento]
 tags: [javascript]
 comments: true

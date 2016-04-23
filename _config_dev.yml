@@ -5,7 +5,7 @@
 #
 title:       "Jonathan Bijos"
 description: "Curiosidades e experiências de programação"
-url:         "https://quaggie.github.io"
+url:         #
 
 # CONSTANTS
 img_path: "img"
@@ -47,7 +47,7 @@ owner:
   facebook:
   google:
     plus:
-    analytics: UA-76779569-1
+    analytics: ""
     verify:
     ad-client:
     ad-slot:
