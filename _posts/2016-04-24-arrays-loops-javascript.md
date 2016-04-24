@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Arrays e loops em Javascript
-excerpt: Aprenda os diferentes tipos de loops em JS.
+excerpt: Aprenda os diferentes tipos de loops e como utilizar Arrays em JS.
 categories: [desenvolvimento]
 tags: [javascript]
 comments: true
