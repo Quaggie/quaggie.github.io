@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Arrays e loops em Javascript
+title: Arrays e loops em Javascript [Parte I]
 excerpt: Aprenda os diferentes tipos de loops e como utilizar Arrays em JS.
 categories: [desenvolvimento]
 tags: [javascript]
@@ -130,4 +130,4 @@ Particularmente, este é o meu favorito justamente pela sintaxe muito bonita, ap
 
 ### Finalizando
 
-É importante notar que nenhum desses loops retorna algum valor por `default`, ou seja, são somente fuções facilitadoras para manipular `Arrays`. Futuramente iremos discutir sobre loops que `imutáveis` como o `map`, `reduce`, `filter` e afins. Um abraço!
+É importante notar que nenhum desses loops retorna algum valor por `default`, ou seja, são somente fuções facilitadoras para manipular `Arrays`. Futuramente iremos discutir sobre loops que geram `Arrays` `imutáveis` como o `map`, `reduce`, `filter` e afins. Um abraço!
