@@ -8,7 +8,7 @@ tags: [javascript]
 
 ## Prototypal inheritance
 
-Javascript tem suas complicações de sintaxe e o monstruoso `new` apenas por jogo de marketing na época que o Java estava em alta. Mesmo o funcionamento ser absolutamente diferente, desenvolvedores costumam achar que a herança e instâncias podem funcionar iguais as do Java. Há um grande número de posts e artigos que explicam muito bem isto, inclusive [este aqui](http://javascript.crockford.com/prototypal.html) do Douglas Crockford(Post muito antigo) já dá para ter uma ideia do que estamos falando.
+Javascript tem suas complicações de sintaxe e o monstruoso `new` apenas por jogo de marketing na época que o Java estava em alta. Mesmo o funcionamento sendo absolutamente diferente, desenvolvedores costumam achar que a herança e as instâncias podem funcionar iguais às do Java. Há um grande número de posts e artigos que explicam muito bem isto, inclusive [este aqui](http://javascript.crockford.com/prototypal.html) do Douglas Crockford(Post muito antigo) já dá para ter uma ideia do que estamos falando.
 
 ### E olha.. nenhum tipo de 'new'
 ``` javascript
