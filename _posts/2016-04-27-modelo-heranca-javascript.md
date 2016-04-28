@@ -74,7 +74,7 @@ Javascript tem suas complicações de sintaxe e o monstruoso `new` apenas por jo
 
 ## Entenda o conceito e você irá longe
 
-Estude o código acima.. Veja o que está acontecendo por trás dos panos. Eu garanto que não será tão assustado quanto parece. Neste caso de uso, o `instanceof` e o atributo `prototype` explicitamente não é chamado, e nem precisa. O grande `Object.create` já toma conta disso tudo sem a gente ver.
+Estude o código acima.. Veja o que está acontecendo por trás dos panos. Eu garanto que não será tão assustado quanto parece. Neste caso de uso o `instanceof` e o atributo `prototype` explicitamente não são chamados, e nem precisa. O grande `Object.create` já toma conta disso tudo sem a gente ver.
 
 #### [Referência do Doc](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
 ``` javascript
