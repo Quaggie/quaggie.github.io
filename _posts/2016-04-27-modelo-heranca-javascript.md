@@ -4,6 +4,7 @@ title: Um modelo de herança com Object.create em JS
 excerpt: Uma das formas mais simples de lidar com objetos herdados
 categories: [desenvolvimento]
 tags: [javascript]
+comments: true
 ---
 
 ## Prototypal inheritance
