@@ -59,13 +59,11 @@ var Person = (function () {
 
   function Secret (name) { // Construtor para 'new'
     this.name = name;
-    Object.freeze(this.name);
   }
 
   Secret.prototype.init = function (name) { // Construtor para Object.create();
     if (this.name) return;
     this.name = name;
-    Object.freeze(this.name);
   };
 
   Secret.prototype.getAge = function () { // Getter
@@ -85,7 +83,6 @@ console.log(guy.getAge()); // 21
 guy.birthday();
 console.log(guy.getAge()); // 22
 console.log(guy.name); // "Jonathan"
-guy.name = "John"; // error;
 
 var girl = Object.create(Person.prototype);
 girl.init('Rose'); // Inicializando o construtor com o nome
@@ -94,7 +91,6 @@ console.log(girl.age); // undefined
 console.log(girl.getAge()); // 22 ??
 girl.birthday();
 console.log(girl.getAge()); // 23 ??
-
 ```
 
 > A variável `age` mantém o valor mesmo com outra instância pois a `closure` mantém referência, diferente do `this`. Tome cuidado.
