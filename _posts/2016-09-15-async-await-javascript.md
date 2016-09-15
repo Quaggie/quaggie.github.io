@@ -181,4 +181,4 @@ doPayment: req => {
 
 #### Referências
 
-Novamente, o site [developer.mozzila](https://developer.mozilla.org) é sempre uma boa fonte para pesquisa, assim como o blog do grande [Willian](https://willianjusten.com.br/), que é um dos maiores (se não o maior) de frontend do Brasil.
+Novamente, o site [developer.mozilla](https://developer.mozilla.org) é sempre uma boa fonte para pesquisa, assim como o blog do grande [Willian](https://willianjusten.com.br/), que é um dos maiores (se não o maior) de frontend do Brasil.
